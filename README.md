@@ -13,7 +13,6 @@
 
 <p align="center">
   <a href="https://tailwindmail.dev">Website</a> ·
-  <a href="https://github.com/othastudio/tailwindmail">GitHub</a>
 </p>
 
 ---
