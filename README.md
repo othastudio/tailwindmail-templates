@@ -20,7 +20,7 @@
 
 ## What is this repository?
 
-This is the **open-source template gallery** for [TailwindMail](https://tailwindmail.dev) — a visual email builder and compiler for people who already think in Tailwind.
+This is the **open-source template gallery** for [TailwindMail](https://tailwindmail.dev) a Tailwind-safe email writer and visual editor. Write emails in Tailwind, or build them with drag and drop, then compile to HTML that inboxes understand.
 
 We publish official designs here, and anyone can share their own. Browse the live gallery at [tailwindmail.dev/templates](https://tailwindmail.dev/templates), fork a layout into the [editor](https://tailwindmail.dev/editor), or clone this repo and drop a template into your next campaign.
 
@@ -32,7 +32,7 @@ Use these templates for transactional mail, product updates, invoices, launches,
 
 1. Open the [template gallery](https://tailwindmail.dev/templates) and pick a design.
 2. Preview it, download the HTML, or **Fork to editor** on [TailwindMail](https://tailwindmail.dev).
-3. Customize copy, colors, and blocks in the [visual editor](https://tailwindmail.dev/editor), then compile and send.
+3. Open it in the [editor](https://tailwindmail.dev/editor): edit the Tailwind source, or rearrange blocks with drag and drop. Then compile and send.
 
 From this repo:
 
@@ -41,7 +41,7 @@ git clone https://github.com/othastudio/tailwindmail-templates.git
 cd tailwindmail-templates
 ```
 
-Each template lives in `templates/` with Tailwind source, compiled HTML, and a preview. Import the source into [TailwindMail](https://tailwindmail.dev), or send the compiled HTML through Laravel, Node.js, Resend, Brevo, SendGrid, and similar providers.
+Each template is a folder at the repo root (`starter-template/`, then your own slug). Import `source.html` into [TailwindMail](https://tailwindmail.dev), or send `compiled.html` through Laravel, Node.js, Resend, Brevo, SendGrid, and similar providers.
 
 New to the product? Start with the [TailwindMail docs](https://tailwindmail.dev/docs).
 
@@ -50,45 +50,42 @@ New to the product? Start with the [TailwindMail docs](https://tailwindmail.dev/
 ## Repository layout
 
 ```
-templates/
-  official/                 Official TailwindMail templates
-    barebone/
-      meta.json             Name, author, category, description
-      source.html           Tailwind markup (what you edit)
-      compiled.html         Email-safe HTML (what you send)
-      preview.png           Screenshot for the gallery
-  community/                Community submissions
-    your-github-handle/
-      invoice-notice/
-        ...
+README.md
+starter-template/           Copy this folder as a reference
+  meta.json                 Name, author, category, description
+  source.html               Inner Tailwind markup (no html/body)
+  compiled.html             Email-safe HTML (what you send)
+  preview.png               Screenshot for the gallery
+  README.md                 Optional notes
+your-template-slug/         Your submission, same files as above
 ```
 
-Official templates are maintained by the TailwindMail team. Community templates are grouped by GitHub username so authors stay credited on [the gallery](https://tailwindmail.dev/templates).
+One folder per template, at the root. Credit yourself in `meta.json` that handle is what shows on [the gallery](https://tailwindmail.dev/templates).
 
 ---
 
 ## Share your template
 
-We want this gallery to grow with real work from the community — welcome emails, receipts, launch notes, newsletters, and anything else you have shipped with [TailwindMail](https://tailwindmail.dev).
+We want this gallery to grow with real work from the community welcome emails, receipts, launch notes, newsletters, and anything else you have shipped with [TailwindMail](https://tailwindmail.dev).
 
 ### 1. Design it
 
-Build the email in the [TailwindMail editor](https://tailwindmail.dev/editor), or write Tailwind markup by hand and compile it. Preview on desktop and mobile, then send a test before you submit.
+Build it in [TailwindMail](https://tailwindmail.dev/editor) write Tailwind classes in the code editor, or drag and drop blocks. Compile, preview on desktop and mobile, then send a test before you submit.
 
 ### 2. Add it to the repo
 
-Fork [othastudio/tailwindmail-templates](https://github.com/othastudio/tailwindmail-templates), create a branch, and add a folder:
+Fork [othastudio/tailwindmail-templates](https://github.com/othastudio/tailwindmail-templates), create a branch, and add a folder at the **repo root**:
 
 ```
-templates/community/<your-github-handle>/<template-slug>/
+<your-template-slug>/
 ```
 
-Use a short kebab-case slug (`welcome`, `password-reset`, `weekly-digest`). Include:
+Copy [`starter-template/`](starter-template) as the reference it has every required file. Use a short kebab-case slug (`welcome`, `password-reset`, `weekly-digest`). Include:
 
 | File | Required | Purpose |
 | --- | --- | --- |
 | `meta.json` | Yes | Gallery metadata |
-| `source.html` | Yes | Tailwind source |
+| `source.html` | Yes | Inner Tailwind markup only (no `html` / `head` / `body`) |
 | `compiled.html` | Yes | Compiled, inlined HTML |
 | `preview.png` | Yes | 1200×900 (or similar) screenshot |
 | `README.md` | Optional | Extra notes, credits, variants |
@@ -101,9 +98,7 @@ Use a short kebab-case slug (`welcome`, `password-reset`, `weekly-digest`). Incl
   "slug": "welcome-aboard",
   "author": "your-github-handle",
   "category": "transactional",
-  "description": "A calm onboarding email with a single primary CTA.",
-  "tags": ["welcome", "onboarding"],
-  "clients": ["gmail", "outlook", "apple-mail"]
+  "description": "A calm onboarding email with a single primary CTA."
 }
 ```
 
@@ -121,24 +116,24 @@ You can also start from the **Submit template** flow on [tailwindmail.dev/templa
 - Keep the layout email-safe: table-friendly structure, inline-friendly styles, a clear CTA.
 - Avoid tracking scripts, remote fonts that break in Outlook, and huge images.
 - Do not include private brand assets, customer data, or secrets.
-- Credit yourself in `meta.json` — community templates show your GitHub handle on the site.
+- Credit yourself in `meta.json` community templates show your GitHub handle on the site.
 
 ---
 
 ## How to use TailwindMail
 
-[TailwindMail](https://tailwindmail.dev) compiles Tailwind utility classes into inlined, email-safe HTML. You can drag blocks in the editor, paste Tailwind source, preview live, and export HTML for your stack.
+[TailwindMail](https://tailwindmail.dev) is a Tailwind-safe email writer and a visual editor. Write Tailwind markup, or drag and drop sections, buttons, and cards both compile to inlined HTML you can preview and export.
 
 | Start here | Link |
 | --- | --- |
 | Product | [tailwindmail.dev](https://tailwindmail.dev) |
 | Docs | [Installation, writing emails, compiling](https://tailwindmail.dev/docs) |
-| Editor | [Build and preview in the browser](https://tailwindmail.dev/editor) |
+| Editor | [Write Tailwind or drag and drop](https://tailwindmail.dev/editor) |
 | Template library | [Official and community designs](https://tailwindmail.dev/templates) |
 | Changelog | [What shipped recently](https://tailwindmail.dev/changelog) |
 | Source | [github.com/othastudio/tailwindmail](https://github.com/othastudio/tailwindmail) |
 
-Typical flow: write Tailwind markup → compile → preview in Gmail / Outlook / Apple Mail → send. Details live in the [docs](https://tailwindmail.dev/docs) (`Write emails`, `Compile to HTML`, `Email clients`).
+Typical flow: write Tailwind **or** drag and drop → compile → preview in Gmail / Outlook / Apple Mail → send. Details live in the [docs](https://tailwindmail.dev/docs) (`Write emails`, `Compile to HTML`, `Email clients`).
 
 ---
 
