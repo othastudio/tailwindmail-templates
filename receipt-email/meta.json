@@ -1,0 +1,7 @@
+{
+  "name": "Receipt",
+  "slug": "receipt-email",
+  "author": "othastudio",
+  "category": "transactional",
+  "description": "Payment receipt email with amount paid, date, and a download CTA."
+}

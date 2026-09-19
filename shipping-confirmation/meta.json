@@ -1,0 +1,7 @@
+{
+  "name": "Shipping Confirmation",
+  "slug": "shipping-confirmation",
+  "author": "othastudio",
+  "category": "transactional",
+  "description": "Order shipped email with tracking CTA, carrier details, and delivery window."
+}

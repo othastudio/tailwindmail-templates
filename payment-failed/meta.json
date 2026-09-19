@@ -1,0 +1,7 @@
+{
+  "name": "Payment Failed",
+  "slug": "payment-failed",
+  "author": "othastudio",
+  "category": "alert",
+  "description": "Failed-payment notification with an update-card CTA and what happens next."
+}

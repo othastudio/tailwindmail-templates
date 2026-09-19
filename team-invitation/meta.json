@@ -1,0 +1,7 @@
+{
+  "name": "Team Invitation",
+  "slug": "team-invitation",
+  "author": "othastudio",
+  "category": "transactional",
+  "description": "SaaS team invite with an accept CTA, expiry note, and ignore-if-not-you copy."
+}

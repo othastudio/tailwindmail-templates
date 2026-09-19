@@ -1,0 +1,7 @@
+{
+  "name": "Invoice",
+  "slug": "invoice-email",
+  "author": "othastudio",
+  "category": "transactional",
+  "description": "Invoice HTML email with amount due, due date, and a pay-invoice CTA."
+}

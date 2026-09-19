@@ -1,0 +1,7 @@
+{
+  "name": "Order Confirmation",
+  "slug": "order-confirmation",
+  "author": "othastudio",
+  "category": "transactional",
+  "description": "Ecommerce order confirmation with a view-order CTA and order details."
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Subscription Confirmation",
+  "slug": "subscription-confirmation",
+  "author": "othastudio",
+  "category": "transactional",
+  "description": "Subscription confirmation email with plan details and a manage-billing CTA."
+}

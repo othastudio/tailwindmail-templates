@@ -61,6 +61,16 @@ email-verification/         Official verify-email template
 otp-code/                   Official OTP code template
 magic-link/                 Official magic-link login template
 password-reset/             Official password reset template
+signup-confirmation/        Official signup confirmation template
+team-invitation/            Official team invitation template
+order-confirmation/         Official order confirmation template
+receipt-email/              Official receipt template
+invoice-email/              Official invoice template
+subscription-confirmation/  Official subscription confirmation template
+payment-failed/             Official payment failed template
+trial-ending/               Official trial ending template
+shipping-confirmation/      Official shipping confirmation template
+newsletter/                 Official newsletter template
 your-template-slug/         Your submission, same files as above
 ```
 
