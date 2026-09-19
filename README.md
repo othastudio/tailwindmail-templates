@@ -58,6 +58,7 @@ starter-template/           Copy this folder as a reference
   README.md                 Optional notes
 welcome-email/              Official welcome template
 email-verification/         Official verify-email template
+otp-code/                   Official OTP code template
 your-template-slug/         Your submission, same files as above
 ```
 

@@ -1,0 +1,7 @@
+{
+  "name": "OTP Code",
+  "slug": "otp-code",
+  "author": "othastudio",
+  "category": "transactional",
+  "description": "One-time passcode email with a large code block, expiry note, and ignore-if-not-you copy."
+}
