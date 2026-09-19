@@ -1,0 +1,7 @@
+{
+  "name": "Email Verification",
+  "slug": "email-verification",
+  "author": "othastudio",
+  "category": "transactional",
+  "description": "Confirm-your-address email with a single verify CTA, expiry note, and ignore-if-not-you copy."
+}

@@ -57,6 +57,7 @@ starter-template/           Copy this folder as a reference
   preview.png               Screenshot for the gallery
   README.md                 Optional notes
 welcome-email/              Official welcome template
+email-verification/         Official verify-email template
 your-template-slug/         Your submission, same files as above
 ```
 
