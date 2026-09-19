@@ -59,6 +59,7 @@ starter-template/           Copy this folder as a reference
 welcome-email/              Official welcome template
 email-verification/         Official verify-email template
 otp-code/                   Official OTP code template
+magic-link/                 Official magic-link login template
 your-template-slug/         Your submission, same files as above
 ```
 

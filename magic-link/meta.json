@@ -1,0 +1,7 @@
+{
+  "name": "Magic Link Login",
+  "slug": "magic-link",
+  "author": "othastudio",
+  "category": "transactional",
+  "description": "Passwordless sign-in email with a single magic-link CTA, expiry note, and ignore-if-not-you copy."
+}
