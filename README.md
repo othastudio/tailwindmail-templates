@@ -71,6 +71,7 @@ payment-failed/             Official payment failed template
 trial-ending/               Official trial ending template
 shipping-confirmation/      Official shipping confirmation template
 newsletter/                 Official newsletter template
+marrakech-newsletter/        Community luxury real estate newsletter (iietmoon)
 your-template-slug/         Your submission, same files as above
 ```
 
