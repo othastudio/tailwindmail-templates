@@ -56,6 +56,7 @@ starter-template/           Copy this folder as a reference
   compiled.html             Email-safe HTML (what you send)
   preview.png               Screenshot for the gallery
   README.md                 Optional notes
+welcome-email/              Official welcome template
 your-template-slug/         Your submission, same files as above
 ```
 

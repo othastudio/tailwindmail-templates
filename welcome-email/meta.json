@@ -1,0 +1,7 @@
+{
+  "name": "Welcome Email",
+  "slug": "welcome-email",
+  "author": "othastudio",
+  "category": "onboarding",
+  "description": "Onboarding welcome with a brand header, next steps, and a single primary CTA ready to fork in TailwindMail."
+}
