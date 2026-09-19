@@ -1,0 +1,7 @@
+{
+  "name": "Password Reset",
+  "slug": "password-reset",
+  "author": "othastudio",
+  "category": "transactional",
+  "description": "Reset-your-password email with a single CTA, expiry note, and ignore-if-not-you copy."
+}
